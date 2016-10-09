@@ -109,7 +109,8 @@ class google_event():
         return self._lecture.date_stop
 
     def summary(self):
-        return u'[{}] {}-{}'.format(
+        return u'[{}{:0>2d}] {}-{}'.format(
             self._lecture.curso_id.product.default_code,
+            self._lecture.curso_id.instance,
             self._lecture.seq,
             self._lecture.name)
