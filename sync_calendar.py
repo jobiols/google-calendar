@@ -23,6 +23,8 @@ import google_event
 
 # PASSWORD = raw_input('Enter password: ')
 PASSWORD = 'melquiades'
+DESDE = '2016-10-08'
+HASTA = '2016-12-30'
 
 login = {
     'server': '52.205.148.95',
@@ -42,7 +44,7 @@ google.connect()
 
 # obtener objeto lecture de odoo server
 lecture_obj = odoo.env['curso.lecture']
-ids = lecture_obj.search([('date', '>', '2016-10-08')], limit=5)
+ids = lecture_obj.search([('date', '>', DESDE),('date', '<', HASTA)])
 
 # limpiar el calendario de google
 google.clear()
