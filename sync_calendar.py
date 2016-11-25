@@ -22,11 +22,12 @@ import odoorpc
 import google_event
 
 PASSWORD = raw_input('Enter password: ')
-DESDE = '2016-10-06'
-HASTA = '2016-12-30'
+DESDE = '2016-11-15'
+HASTA = '2017-03-28'
 
+#    'server': 'localhost',
 login = {
-    'server': '52.205.148.95',
+    'server': '52.70.8.156',
     'port': 8068,
     'database': 'makeover_datos',
     'username': 'admin',
@@ -36,17 +37,21 @@ login = {
 # conectar con odoo, proveer credenciales
 odoo = odoorpc.ODOO(login.get('server'), port=login.get('port'))
 odoo.login(login.get('database'), login.get('username'), login.get('password'))
+print 'conectado con odoo'
 
 # conectar con google, proveer credenciales
 google = google_event.google()
 google.connect()
+print 'conectado con google'
 
 # obtener objeto lecture de odoo server
 lecture_obj = odoo.env['curso.lecture']
 ids = lecture_obj.search([('date', '>', DESDE),('date', '<', HASTA)])
+print 'ya tengo todas las lectures'
 
 # limpiar el calendario de google
 google.clear()
+print 'ya borre el calendario de google'
 
 # volver a cargar todos los eventos
 for lecture in lecture_obj.browse(ids):
