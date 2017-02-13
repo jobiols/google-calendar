@@ -22,12 +22,12 @@ import odoorpc
 import google_event
 
 PASSWORD = raw_input('Enter password: ')
-DESDE = '2016-11-15'
-HASTA = '2017-03-28'
+DESDE = '2017-01-30'
+HASTA = '2017-04-30'
 
-#    'server': 'localhost',
+#    'server': '52.70.8.156',
 login = {
-    'server': '52.70.8.156',
+    'server': 'localhost',
     'port': 8068,
     'database': 'makeover_datos',
     'username': 'admin',
