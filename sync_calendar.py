@@ -20,12 +20,11 @@
 # -----------------------------------------------------------------------------------
 import odoorpc
 import google_event
+from secret import PASSWORD
 
-PASSWORD = raw_input('Enter password: ')
-DESDE = '2017-01-30'
-HASTA = '2017-04-30'
+DESDE = '2017-03-20'
+HASTA = '2017-06-01'
 
-#    'server': '52.70.8.156',
 login = {
     'server': 'localhost',
     'port': 8068,

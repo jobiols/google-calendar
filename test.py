@@ -21,8 +21,7 @@
 import odoorpc
 import google_event
 
-# PASSWORD = raw_input('Enter password: ')
-PASSWORD = 'melquiades'
+
 DESDE = '2016-10-08'
 HASTA = '2016-12-30' 
 
