@@ -22,11 +22,11 @@ import odoorpc
 import google_event
 from secret import PASSWORD
 
-DESDE = '2017-03-20'
-HASTA = '2017-06-01'
+DESDE = '2017-05-15'
+HASTA = '2017-12-30'
 
 login = {
-    'server': 'localhost',
+    'server': '18.220.25.10',
     'port': 8068,
     'database': 'makeover_datos',
     'username': 'admin',
