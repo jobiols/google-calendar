@@ -22,7 +22,7 @@ import odoorpc
 import google_event
 from secret import PASSWORD
 
-DESDE = '2017-05-15'
+DESDE = '2017-08-15'
 HASTA = '2017-12-30'
 
 login = {
