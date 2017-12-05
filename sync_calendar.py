@@ -21,9 +21,10 @@
 import odoorpc
 import google_event
 from secret import PASSWORD
+import datetime
 
-DESDE = '2017-08-15'
-HASTA = '2017-12-30'
+DESDE = (datetime.datetime.today() + datetime.timedelta(months=-90)).strftime('%Y-%m-%d')
+HASTA = (datetime.datetime.today() + datetime.timedelta(months=+180)).strftime('%Y-%m-%d')
 
 login = {
     'server': '18.220.25.10',
