@@ -23,8 +23,8 @@ import google_event
 from secret import PASSWORD
 import datetime
 
-DESDE = (datetime.datetime.today() + datetime.timedelta(months=-90)).strftime('%Y-%m-%d')
-HASTA = (datetime.datetime.today() + datetime.timedelta(months=+180)).strftime('%Y-%m-%d')
+DESDE = (datetime.datetime.today() + datetime.timedelta(days=-90)).strftime('%Y-%m-%d')
+HASTA = (datetime.datetime.today() + datetime.timedelta(days=+180)).strftime('%Y-%m-%d')
 
 login = {
     'server': '18.220.25.10',
