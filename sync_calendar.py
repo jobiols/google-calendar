@@ -30,7 +30,7 @@ HASTA = (datetime.datetime.today() + datetime.timedelta(days=+180)).strftime(
 
 login = {
     'server': '18.220.25.10',
-    'port': 8068,
+    'port': 80,
     'database': 'makeover_datos',
     'username': 'admin',
     'password': PASSWORD,
