@@ -23,7 +23,7 @@ import google_event
 from secret import PASSWORD
 import datetime
 
-DESDE = (datetime.datetime.today() + datetime.timedelta(days=-7)).strftime(
+DESDE = (datetime.datetime.today() + datetime.timedelta(days=-79)).strftime(
     '%Y-%m-%d')
 HASTA = (datetime.datetime.today() + datetime.timedelta(days=+180)).strftime(
     '%Y-%m-%d')
